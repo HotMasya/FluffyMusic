@@ -1,0 +1,9 @@
+﻿<div class="top-bar">
+    <div class="user-info">
+        <img class="user-img" src="@ViewBag.UserAvatarUrl" />
+        <span class="user-name">@User.Identity.Name#@ViewBag.UserDiscriminator</span>
+    </div>
+    <form asp-controller="Auth" asp-action="Logout" method="POST">
+        <button type="submit" class="log-out-button bg-red-hover bg-red">Log out</button>
+    </form>
+</div>
